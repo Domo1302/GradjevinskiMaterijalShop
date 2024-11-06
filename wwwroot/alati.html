@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Upravljanje Alatima</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Upravljanje Alatima</h1>
+    <nav>
+        <a href="index.html">Početna</a>
+        <a href="narudzbe.html">Narudžbe</a>
+        <a href="materijali.html">Materijali</a>
+    </nav>
+
+    <h2>Popis Alata</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Naziv</th>
+                <th>SKU</th>
+                <th>Količina</th>
+                <th>Cijena</th>
+                <th>Marka</th>
+                <th>Garancija (godina)</th>
+                <th>Akcije</th>
+            </tr>
+        </thead>
+        <tbody id="alatiTable"></tbody>
+    </table>
+
+    <h2>Dodaj / Uredi Alat</h2>
+    <form id="alatForm">
+        <input type="hidden" id="alatId">
+        <label for="naziv">Naziv:</label>
+        <input type="text" id="naziv" required>
+
+        <label for="sku">SKU:</label>
+        <input type="text" id="sku" required>
+
+        <label for="kolicina">Količina:</label>
+        <input type="number" id="kolicina" required>
+
+        <label for="cijena">Cijena:</label>
+        <input type="number" id="cijena" step="0.01" required>
+
+        <label for="marka">Marka (opcionalno):</label>
+        <input type="text" id="marka">
+
+        <label for="garancijaGodina">Garancija (godina) (opcionalno):</label>
+        <input type="number" id="garancijaGodina">
+
+        <button type="submit">Spremi</button>
+        <button type="button" id="cancelAlatEdit">Otkaži</button>
+    </form>
+
+    <!-- Include jQuery and script.js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

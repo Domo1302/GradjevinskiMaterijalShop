@@ -1,0 +1,6 @@
+@GradjevinskiMaterijali_HostAddress = http://localhost:5130
+
+GET {{GradjevinskiMaterijali_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

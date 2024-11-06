@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Narudžbe - Građevinski Materijali</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Građevinski Materijali - Narudžbe</h1>
+    <nav>
+        <a href="narudzbe.html">Narudžbe</a>
+        <a href="materijali.html">Materijali</a>
+        <a href="alati.html">Alati</a>
+    </nav>
+
+    <h2>Kreiraj Narudžbu</h2>
+    <form id="narudzbaForm">
+        <!-- Polja za narudžbu -->
+        <label for="napomena">Napomena (opcionalno):</label>
+        <input type="text" id="napomena">
+
+        <!-- Sekcija za stavke narudžbe -->
+        <h3>Stavke Narudžbe</h3>
+        <div id="stavkeContainer">
+            <!-- Dinamički generirane stavke -->
+        </div>
+        <button type="button" id="dodajStavku">Dodaj Stavku</button>
+
+        <button type="submit">Kreiraj Narudžbu</button>
+    </form>
+
+    <!-- Include jQuery and script.js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
